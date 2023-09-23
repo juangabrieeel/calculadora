@@ -1,0 +1,36 @@
+/* . se usa para las clases
+    # se usa para los id 
+    overflow-y es para añadir un scroll por si el resultado no se visualiza completo
+    border-radius hacer que los bordes se redondeen
+
+    */
+.tabla {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: black;
+    width: 335px;
+    height: 500px;
+    border-radius: 25px;
+}
+
+.tabla td button {
+    display: block;
+    width: 62px;
+    height: 70px;
+    font-size: 25px;
+}
+
+#resultado {
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    background-color: dimgray;
+    border-radius: 25px;
+    overflow-y: scroll;
+
+}
