@@ -112,6 +112,80 @@ function resolver() {
             res = parseFloat(numero1) / parseFloat(numero2);
             break;
     }
+    //FUNCIONALIDAD QUE HACE QUE FUNCIONEN LAS TECLAS
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Agrega un evento keydown al documento
+    document.addEventListener("keydown", function (event) {
+        var key = event.key;
+
+        // Verifica que tecla se presiono y realiza la accion correspondiente
+        switch (key) {
+            case "1":
+                resultado.textContent += "1";
+                break;
+            case "2":
+                resultado.textContent += "2";
+                break;
+            case "3":
+                resultado.textContent += "3";
+                break;
+            case "4":
+                resultado.textContent += "4";
+                break;
+            case "5":
+                resultado.textContent += "5";
+                break;
+            case "6":
+                resultado.textContent += "6";
+                break;
+            case "7":
+                resultado.textContent += "7";
+                break;
+            case "8":
+                resultado.textContent += "8";
+                break;
+            case "9":
+                resultado.textContent += "9";
+                break;
+            case "0":
+                resultado.textContent += "0";
+                break;
+            case "+":
+                numero1 = resultado.textContent;
+                operador = "+";
+                limpiar();
+                break;
+            case "-":
+                numero1 = resultado.textContent;
+                operador = "-";
+                limpiar();
+                break;
+            case "*":
+                numero1 = resultado.textContent;
+                operador = "*";
+                limpiar();
+                break;
+            case "/":
+                numero1 = resultado.textContent;
+                operador = "/";
+                limpiar();
+                break;
+            case "Enter":
+                numero2 = resultado.textContent;
+                resolver();
+                break;
+            case "Escape":
+                resetear();
+                break;
+            case "Backspace":
+                // Borra el ultimo caracter de resultado.textContent
+                resultado.textContent = resultado.textContent.slice(0, -1);
+                break;
+        }
+    });
+
+});
     resetear();
     resultado.textContent = res;
 }
