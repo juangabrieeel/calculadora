@@ -6,11 +6,11 @@
     */
 .tabla {
     display: block;
-    margin: 0 auto;
+    /*margin: 0 auto;  ESTO HACE QUE QUEDE EN MEDIO*/
     padding: 20px;
     background-color: black;
-    width: 335px;
-    height: 500px;
+    width: 345px;
+    height: 490px;
     border-radius: 25px;
 }
 
@@ -19,17 +19,52 @@
     width: 62px;
     height: 70px;
     font-size: 25px;
+    border-radius: 30px;
 }
 
 #resultado {
     display: block;
-    text-align: center;
+    text-align: right;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
     width: 300px;
     height: 100px;
     line-height: 100px;
-    background-color: dimgray;
+    background-color: lightyellow;
+    border-radius: 40px;
+    /*overflow-y: scroll; ESTO AÑADE UNA BARRA DE MOVILIDAD EN EL RESULTADO*/
+
+}
+
+#multiplicacion {
+    background-color: coral;
+
+}
+
+#division {
+    background-color: coral;
+
+}
+
+#resta {
+    background-color: coral;
+
+}
+
+#reset {
+    background-color: coral;
+
+}
+
+#suma {
+    background-color: coral;
+
+}
+
+#igual {
+    background-color: coral;
+
+}
     border-radius: 25px;
     overflow-y: scroll;
 
