@@ -112,7 +112,11 @@ function resolver() {
             res = parseFloat(numero1) / parseFloat(numero2);
             break;
     }
-    //FUNCIONALIDAD QUE HACE QUE FUNCIONEN LAS TECLAS
+    resetear();
+    resultado.textContent = res;
+}
+
+//FUNCIONALIDAD QUE HACE QUE FUNCIONEN LAS TECLAS
 document.addEventListener("DOMContentLoaded", function () {
 
     // Agrega un evento keydown al documento
@@ -186,6 +190,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
-    resetear();
-    resultado.textContent = res;
-}
